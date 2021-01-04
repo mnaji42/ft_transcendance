@@ -1,0 +1,2 @@
+class WaitingMatch < ApplicationRecord
+end

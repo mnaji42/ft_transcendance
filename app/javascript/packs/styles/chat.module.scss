@@ -1,0 +1,374 @@
+@import './variables';
+
+// Compact
+
+.compact {
+  background-color: #252e38;
+  height: 100%;
+}
+
+.compactFriend {
+  height: 75px;
+  width: 75px;
+  padding: 10px;
+}
+
+// Expand
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tabs {
+  display: flex;
+  background-color: #252e38;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #444d56 #252e38;
+}
+
+.tabs .infoChat {
+  // position: relative;
+}
+
+.tabs .infoChatImg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tabs .infoChatDiv {
+  position: absolute;
+  padding: 20px;
+  background: #363f48;
+  border: 1px solid white;
+  color: white;
+  display: none;
+}
+
+.infoChatImg:hover + .infoChatDiv {
+  display: block;
+}
+
+.tab {
+  display: flex;
+  background-color: #252e38;
+  color: white;
+  margin-top: 5px;
+  margin-left: 7px;
+  padding: 4px 10px;
+  svg,
+  path {
+    $size: 0.9rem;
+    width: $size;
+    height: $size;
+    color: #aeb5bf;
+  }
+}
+
+.tab:hover {
+  background-color: #444d56;
+}
+
+.tabCurrent {
+  background-color: #363e48;
+}
+
+.tabCurrent:hover {
+  background-color: #363e48;
+}
+
+.messages {
+  background-color: #363e48;
+  color: white;
+  flex: 1;
+  padding: 10px;
+
+  overflow-y: auto;
+  scrollbar-color: #444d56 #363e48;
+
+  max-height: calc(100vh - 12.4rem);
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 17rem;
+}
+
+.state {
+  text-align: center;
+  font-style: italic;
+  color: lighten(#363e48, 40%);
+  margin-top: 0.5rem;
+}
+
+.messagePicture {
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+
+.messageRight {
+  flex: 1;
+  padding-left: 15px;
+}
+
+.messageHead {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #aeb5bf;
+  line-height: 0.9;
+}
+
+.messageUser {
+  font-size: 1rem;
+}
+
+.messageDate {
+  margin-left: 5px;
+  font-size: 0.75rem;
+}
+
+.messageContent {
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.messageGuildAnagram {
+  // font-style: italic;
+  color: #777;
+}
+
+.room {
+  color: lighten(#363e48, 40%);
+  &:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+  cursor: pointer;
+  transition: height 100ms ease-in-out;
+  padding: 0.4rem;
+
+  &:hover {
+    color: lighten(#363e48, 50%);
+    background-color: lighten(#363e48, 10%);
+  }
+}
+
+.roomTitle {
+  display: flex;
+  justify-content: space-between;
+  height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.keyIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.joinRoom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  > input {
+    width: 70%;
+    padding: 2px 12px;
+    border: 0;
+    background-color: #464d56;
+    color: white;
+  }
+  > button {
+    padding: 0.5rem;
+    background-color: #f2bb13;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.joinRoomError {
+  > input {
+    border: lighten(red, 20%) solid 1px;
+  }
+}
+
+.roomExpand {
+  color: lighten(#363e48, 50%);
+  background-color: lighten(#363e48, 10%);
+}
+
+.newChannelButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  > button {
+    padding: 0.5rem;
+    background-color: #f2bb13;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+}
+
+.newChannel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  color: lighten(#363e48, 50%);
+  background-color: lighten(#363e48, 10%);
+  > input {
+    width: 80%;
+    padding: 2px 12px;
+    border: 0;
+    background-color: #464d56;
+    color: white;
+    border-radius: 5px;
+    height: 2.3rem;
+  }
+  > *:not(:first-child) {
+    margin-top: 0.3rem;
+  }
+}
+
+.newChannelSubmit {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  > button {
+    padding: 0.5rem;
+    background-color: #f2bb13;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+}
+
+.newChannelClose {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  padding: 10px;
+  background-color: #363e48;
+}
+
+.boxInner {
+  height: 2rem;
+  width: 100%;
+  padding: 2px 12px;
+  border: 0;
+  background-color: #464d56;
+  color: white;
+}
+
+.boxSend {
+  margin-top: calc(1rem / 2 - 2.5px);
+  margin-left: -25px;
+  width: 20px;
+  height: 20px;
+  background-color: #464d56;
+}
+
+.boxSend > svg {
+  width: 20px;
+  height: 20px;
+  color: #aeb5bf;
+  opacity: 1;
+}
+
+.boxSend:hover > svg {
+  opacity: 0.7;
+}
+
+.contentButton {
+  width: auto;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 10px 10px;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+}
+
+.profileTooltip {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+
+  &[data-show] {
+    display: block;
+  }
+}
+
+.defyButton {
+  background-color: $color-blue;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tooltip {
+  padding: 0.3rem;
+}
+
+.tooltipDisplayName {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tooltipLogin {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  > div {
+    flex: 1;
+  }
+}
+
+.guildTitle {
+}
+
+.rank {
+  color: #666;
+}
+
+.statusText {
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+
+  &.inGame {
+    color: $color-blue;
+  }
+  &.offline {
+    color: $color-gray;
+  }
+  &.online {
+    color: $color-green;
+  }
+}

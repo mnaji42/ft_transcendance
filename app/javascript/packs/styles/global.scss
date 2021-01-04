@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+// prettier-ignore
+html, body, div, span, h1, h2, h3, h4,
+h5, h6, a, ol,ul, li, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  background-color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}

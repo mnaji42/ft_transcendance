@@ -1,0 +1,365 @@
+/* app */
+
+.app {
+  min-height: 100vh;
+}
+
+.inner {
+  display: flex;
+  padding-top: 65px;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  min-height: 100%;
+}
+
+.appChat {
+  margin-top: -65px;
+  height: 100%;
+  transition: width 200ms ease-in-out;
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background-color: #252e38;
+  box-shadow: 0 0 25px 0 #131c25;
+  z-index: 500;
+  color: white;
+}
+
+.navbarTitle {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.navbarLink {
+  font-size: 15px;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: color 100ms ease-in;
+}
+
+.navbarLinkCurrent,
+.navbarLink:hover {
+  color: #f2bb13;
+}
+
+.navbarIcone {
+  font-size: 15px;
+  padding: 20px;
+  fill: white;
+  transition: fill 100ms ease-in;
+}
+
+.navbarIconeCurrent,
+.navbarIcone:hover {
+  fill: #f2bb13;
+}
+
+.navbarSeparator {
+  flex: 1;
+}
+
+.navbarAccount {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: opacity 100ms ease-in;
+}
+
+.navbarAccount:hover {
+  opacity: 0.7;
+}
+
+.navbarAccountPicture {
+  height: 45px;
+  width: 45px;
+  background-size: cover;
+}
+
+.navbarAccountName {
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 0;
+  font-size: 20px;
+}
+
+.navbarAccountMenu {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.accountMenu {
+  display: fix;
+  height: 100%;
+  right: 0;
+}
+
+.account {
+  display: flex;
+  z-index: 10;
+  right: 0;
+  background-color: #252e38;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  padding: 2px;
+
+  display: none;
+  &[data-show] {
+    display: unset;
+  }
+}
+
+/* chat */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding-top: 65px;
+  height: 100%;
+  width: 300px;
+  transition: width 200ms ease-in-out;
+}
+
+.chatContent {
+  flex: 1;
+}
+
+.chatCollapse {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #f2bb13;
+  border: 0;
+  padding: 0;
+}
+
+.chatCollapseIcon {
+  fill: black;
+  width: 25px;
+  height: 25px;
+}
+
+.pongGame {
+  width: 100%;
+  height: 100%;
+}
+
+/* settings */
+
+.settingsFilter {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: -100vh;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 100ms ease-in;
+  background-color: black;
+}
+
+.settingsFilterOpen {
+  opacity: 0.3;
+}
+
+.settings {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: -100vh;
+  position: absolute;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+/* game spectate */
+
+.browserContainer {
+  display: none;
+}
+
+.checkBoxPlayerReduce:checked ~ .cta {
+  transform: rotate(0deg);
+}
+.checkBoxPlayerReduce:checked ~ .browser {
+  left: -1000px;
+}
+
+.checkBoxPlayerExtend:checked ~ .browserBackground {
+  display: block;
+}
+
+.checkBoxPlayerReduce:checked ~ .browserBackground {
+  display: none;
+}
+
+.checkBoxPlayerExtend:checked ~ .browser {
+  bottom: 50%;
+  width: 54vw;
+  height: calc(28vw + 25px);
+  transform: translate(-50%, 50%);
+}
+
+.checkBoxPlayerExtend:checked ~ .browser > .content {
+  width: 54vw;
+  height: 28vw;
+}
+
+.checkBoxPlayerExtend:checked ~ .browser .specContent .pongGame {
+  width: 54vw;
+  height: 28vw;
+}
+
+.cta {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 30px;
+  height: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7b7b7b;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #252f38;
+  background: #ddac1c;
+  transform: rotate(180deg);
+  transition: 1s;
+  z-index: 99999;
+}
+
+.spanCta {
+  position: relative;
+  bottom: 9px;
+  right: 9px;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  color: #ddac1c;
+  background: #252f38;
+  cursor: pointer;
+}
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #ddac1c;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+.browser {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7b7b7b;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 99999;
+}
+
+.browserBackground {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: calc(100% - 300px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99998;
+}
+
+.topBar {
+  width: 100%;
+  height: 25px;
+  line-height: 20px;
+  background: #fff;
+  border-bottom: solid 2px #7b7b7b;
+  z-index: 2;
+}
+
+.quit,
+.reduce,
+.extend {
+  padding: 0px 8px;
+  margin: 2px;
+  background: #c7c7c7;
+  border-radius: 100%;
+}
+
+.quit:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.reduce:hover {
+  background: yellow;
+  cursor: pointer;
+}
+
+.extend:hover {
+  background: green;
+  cursor: pointer;
+}
+
+.specContent {
+  color: white;
+  background: #9b9b9b;
+  width: 300px;
+  height: 150px;
+}

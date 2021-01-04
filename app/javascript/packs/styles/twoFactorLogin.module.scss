@@ -1,0 +1,62 @@
+.twoFactorLogin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  min-width: 35rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.logoCtnr {
+  display: flex;
+  justify-content: center;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.inputPin {
+  width: 70%;
+  > input {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.go {
+  margin-top: 1rem;
+  > button {
+    padding: 10px 15px;
+    background-color: #f2bb13;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    width: 7rem;
+  }
+}
+
+.error {
+  display: flex;
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.errMsg {
+  margin-left: 0.3rem;
+  margin-top: 0.1rem;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,14 @@
+.mdi {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  width: 1em;
+  height: 1em;
+  > svg {
+    fill: currentColor;
+    position: absolute;
+    bottom: 0;
+    width: 1em;
+    height: 1em;
+  }
+}

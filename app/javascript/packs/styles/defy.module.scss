@@ -1,0 +1,123 @@
+@import './variables.scss';
+
+.ctnr {
+  background-color: white;
+  box-shadow: 0 2px 20px 0 #131c2566;
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+}
+
+.bar {
+  height: 55px;
+  background-color: #252e38;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  flex: 1;
+  padding: 30px;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  flex: 1;
+  padding: 30px;
+}
+
+.close {
+  padding: 0 30px;
+  color: white;
+}
+
+.close > svg {
+  fill: white;
+}
+
+.content {
+  padding: 1rem;
+  min-width: 35rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 3.8rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.defyButton {
+  background-color: $color-blue;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tooltipDisplayName {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tooltipLogin {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  > div {
+    flex: 1;
+  }
+}
+
+.avatarCtnr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  $size: 256px;
+  background-size: cover;
+  width: $size;
+  height: $size;
+  margin-bottom: 1rem;
+}
+
+.guildTitle {
+}
+
+.rank {
+  color: #666;
+}
+
+.statusText {
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+
+  &.inGame {
+    color: $color-blue;
+  }
+  &.offline {
+    color: $color-gray;
+  }
+  &.online {
+    color: $color-green;
+  }
+}

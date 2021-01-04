@@ -1,0 +1,1522 @@
+.line {
+  display: flex;
+}
+
+.colone {
+  text-align: center;
+  display: block;
+  width: 33.34%;
+  height: 93.2vh;
+  overflow: auto;
+}
+
+.contentButton {
+  width: auto;
+  margin-left: 0%;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.divError {
+  margin: 27px;
+  text-align: center;
+  color: red;
+  display: none;
+}
+
+.anagram {
+  width: 12%;
+}
+
+.guildsRank {
+  width: 100%;
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.guildsRankColone {
+  color: #f2bb13;
+  text-align: center;
+  text-decoration: none;
+}
+
+.guildsRankElement {
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.guildsRankElement:hover {
+  background-color: #777;
+}
+
+.guildsTabElement {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.userPicture {
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
+
+.friendTable {
+  background-color: #252e38;
+  width: 100%;
+  color: white;
+}
+
+.friendDeleteFriend {
+}
+
+.friendDeleteFriend:hover {
+  fill: white;
+}
+
+.friendOnline {
+  color: white;
+}
+
+.friendOffline {
+  color: grey;
+}
+
+.friendInCombat {
+  cursor: pointer;
+  background-color: #d00000;
+}
+
+.friendInCombat:hover {
+  background-color: #ea0000;
+}
+
+.user {
+  background-color: #252e38;
+}
+
+.user:hover {
+  background-color: #353e48;
+}
+
+.friend {
+  cursor: pointer;
+  background-color: #252e38;
+}
+
+.friend:hover {
+  background-color: #353e48;
+}
+
+.selectData {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.selectData:hover {
+  color: #f2bb13;
+}
+
+.pointInfo {
+  cursor: pointer;
+}
+
+//------------------- PLAYER ----------------
+
+/* -------------------------- */
+
+//------------------PONG GAME------------------
+.pongGame {
+  margin: 5%;
+  display: none;
+  width: 90%;
+}
+
+p.trainingMode,
+div.maxScore,
+div.chooseMap,
+div.chooseBonus,
+div.chooseLvl,
+div.chooseFriend,
+div.rulesTournament0,
+div.rulesTournament1,
+div.rulesTournament2,
+div.rulesTournament3,
+div.rulesTournament4,
+div.playerWaitingTournament,
+p.displayError,
+p.buttonPlayGame,
+p.buttonJoinTournament,
+div.buttonValidateSettings,
+p.buttonDeleteTournament,
+p.buttonCreateTournament,
+p.buttonJoinChatAdmin,
+p.buttonDeleteChatAdmin,
+p.buttonBanUserAdmin,
+p.buttonDeleteGuildAdmin,
+p.buttonChatRightsAdmin,
+// p.buttonGuildRightsAdmin,
+// div.chooseUsersGuild,
+p.buttonRightsAdmin,
+div.deleteTournamentList,
+div.chooseDate,
+div.chooseNameTournament,
+div.chooseChatChannel,
+div.chooseUser,
+div.chooseGuild,
+.actualWarInfo {
+  display: none;
+}
+
+div.buttonValidateSettings {
+  border-top: 4px solid #252f38;
+}
+
+//-------- Style label -------
+.labelTraining,
+.labelTournament,
+.labelCompetition,
+.labelWar,
+.labelTrainOffLine,
+.labelTrainRandom,
+.labelTrainFriend,
+.labelMaxScore1,
+.labelMaxScore2,
+.labelMaxScore3,
+.labelMaxScore4,
+.labelMaxScore5,
+.labelMaxScore6,
+.labelMaxScore7,
+.labelMaxScore8,
+.labelMaxScore9,
+.labelMaxScore10,
+.labelBonusDefault,
+.labelBonusBarrier,
+.labelBonusDoubleBall,
+.labelLvlNewb,
+.labelLvlPro,
+.labelLvlLegend,
+.labelDeleteSpecial1,
+.labelDeleteSpecial2,
+.labelDeleteSpecial3,
+.labelDeleteSpecial4,
+.buttonStart,
+.buttonFinish,
+.labelQuitSearch {
+  width: auto;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 10px 10px;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.buttonUsersGuild {
+  width: auto;
+  margin-left: 5px;
+  padding: 6px;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.labelName,
+.labelFriend {
+  width: auto;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 10px 5px;
+  background-color: #f2bb13;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+}
+
+.radioMaxScore1:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore1,
+.radioMaxScore2:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore2,
+.radioMaxScore3:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore3,
+.radioMaxScore4:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore4,
+.radioMaxScore5:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore5,
+.radioMaxScore6:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore6,
+.radioMaxScore7:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore7,
+.radioMaxScore8:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore8,
+.radioMaxScore9:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore9,
+.radioMaxScore10:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore10,
+.radioMaxScore1:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore1,
+.radioMaxScore2:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore2,
+.radioMaxScore3:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore3,
+.radioMaxScore4:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore4,
+.radioMaxScore5:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore5,
+.radioMaxScore6:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore6,
+.radioMaxScore7:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore7,
+.radioMaxScore8:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore8,
+.radioMaxScore9:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore9,
+.radioMaxScore10:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelMaxScore10,
+.radioMaxScore1:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore1,
+.radioMaxScore2:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore2,
+.radioMaxScore3:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore3,
+.radioMaxScore4:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore4,
+.radioMaxScore5:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore5,
+.radioMaxScore6:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore6,
+.radioMaxScore7:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore7,
+.radioMaxScore8:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore8,
+.radioMaxScore9:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore9,
+.radioMaxScore10:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore
+  > p
+  > .labelMaxScore10,
+.radioBonusDefault:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusDefault,
+.radioBonusBarrier:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusBarrier,
+.radioBonusDoubleBall:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusDoubleBall,
+  //
+  .radioBonusDefault:checked
+  ~ .collapse
+  > .contentNewWar
+  > div.innerContent
+  > p
+  > .labelBonusDefault,
+.radioBonusBarrier:checked
+~ .collapse
+> .contentNewWar
+> div.innerContent
+> p
+  > .labelBonusBarrier,
+.radioBonusDoubleBall:checked
+~ .collapse
+> .contentNewWar
+> div.innerContent
+> p
+  > .labelBonusDoubleBall,
+  //
+.radioBonusDefault:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusDefault,
+.radioBonusBarrier:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusBarrier,
+.radioBonusDoubleBall:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseBonus
+  > p
+  > .labelBonusDoubleBall,
+.radioLvlNewb:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseLvl
+  > p
+  > .labelLvlNewb,
+.radioLvlPro:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseLvl
+  > p
+  > .labelLvlPro,
+.radioLvlLegend:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.chooseLvl
+  > p
+  > .labelLvlLegend,
+.radioDeleteSpecial1:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.deleteTournamentList
+  > p
+  > .labelDeleteSpecial1,
+.radioDeleteSpecial2:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.deleteTournamentList
+  > p
+  > .labelDeleteSpecial2,
+.radioDeleteSpecial3:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.deleteTournamentList
+  > p
+  > .labelDeleteSpecial3,
+.radioDeleteSpecial4:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.deleteTournamentList
+  > p
+  > .labelDeleteSpecial4,
+.buttonStart:hover,
+.buttonUsersGuild:hover,
+.buttonFinish:hover,
+.labelQuitSearch:hover {
+  color: #ddac1c;
+  background-color: #252f38;
+}
+
+//----------- Training -----------
+
+.radioOffLine:checked ~ .slideSettings > .cnContent > div.maxScore,
+.radioOffLine:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioOffLine:checked ~ .slideSettings > .cnContent > div.chooseBonus,
+.radioOffLine:checked ~ .slideSettings > .cnContent > div.chooseLvl,
+.radioOffLine:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioOffLine:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonPlayGame {
+  display: block;
+}
+
+.radioRandom:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioRandom:checked ~ .slideSettings > .cnContent > div.buttonValidateSettings,
+.radioRandom:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonPlayGame {
+  display: block;
+}
+
+.radioFriend:checked ~ .slideSettings > .cnContent > div.maxScore,
+.radioFriend:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioFriend:checked ~ .slideSettings > .cnContent > div.chooseBonus,
+.radioFriend:checked ~ .slideSettings > .cnContent > div.chooseFriend,
+.radioFriend:checked ~ .slideSettings > .cnContent > div.buttonValidateSettings,
+.radioFriend:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonPlayGame {
+  display: block;
+}
+
+//----------- War -----------
+.radioWar:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioWar:checked ~ .slideSettings > .cnContent > div.actualWarInfo,
+.radioWar:checked ~ .slideSettings > .cnContent > div.buttonValidateSettings,
+.radioWar:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonPlayGame {
+  display: block;
+}
+
+//----------- Tournament -----------
+.radioTournamentSpecial1:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioTournamentSpecial1:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.rulesTournament1,
+.radioTournamentSpecial1:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.playerWaitingTournament,
+.radioTournamentSpecial1:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinTournament,
+.radioTournamentSpecial1:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioTournamentSpecial2:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioTournamentSpecial2:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.rulesTournament2,
+.radioTournamentSpecial2:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.playerWaitingTournament,
+.radioTournamentSpecial2:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinTournament,
+.radioTournamentSpecial2:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioTournamentSpecial3:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioTournamentSpecial3:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.rulesTournament3,
+.radioTournamentSpecial3:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.playerWaitingTournament,
+.radioTournamentSpecial3:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinTournament,
+.radioTournamentSpecial3:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioTournamentSpecial4:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioTournamentSpecial4:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.rulesTournament4,
+.radioTournamentSpecial4:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.playerWaitingTournament,
+.radioTournamentSpecial4:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinTournament,
+.radioTournamentSpecial4:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioTournamentClassic:checked ~ .slideSettings > .cnContent > div.chooseMap,
+.radioTournamentClassic:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.rulesTournament0,
+.radioTournamentClassic:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.playerWaitingTournament,
+.radioTournamentClassic:checked
+  ~ .slideSettings
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinTournament,
+.radioTournamentClassic:checked
+  ~ .slideSettings
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioDeleteSpecial1:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.rulesTournament1,
+.radioDeleteSpecial2:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.rulesTournament2,
+.radioDeleteSpecial3:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.rulesTournament3,
+.radioDeleteSpecial4:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.rulesTournament4,
+.radioDeleteSpecial1:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteTournament,
+.radioDeleteSpecial1:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings,
+.radioDeleteSpecial2:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteTournament,
+.radioDeleteSpecial2:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings,
+.radioDeleteSpecial3:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteTournament,
+.radioDeleteSpecial3:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings,
+.radioDeleteSpecial4:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteTournament,
+.radioDeleteSpecial4:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings,
+.radioTournamentDelete:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.deleteTournamentList,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseDate,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.maxScore,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseBonus,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseNameTournament,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonCreateTournament,
+.radioTournamentCreate:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioChatSearch:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseChatChannel,
+.radioChatSearch:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioChatSearch:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonJoinChatAdmin,
+.radioChatDelete:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseChatChannel,
+.radioChatDelete:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioChatDelete:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteChatAdmin,
+.radioUserBan:checked ~ .slideSettingsAdmin > .cnContent > div.chooseUser,
+.radioUserBan:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioUserBan:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonBanUserAdmin,
+.radioUserBanFromChat:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseUser,
+.radioUserBanFromChat:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseChatChannel,
+.radioUserBanFromChat:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioUserBanFromChat:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonChatRightsAdmin,
+.radioUserRemoveRightGuild:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.chooseGuild,
+  // .radioUserRemoveRightGuild:checked
+  // ~ .slideSettingsAdmin
+  // > .cnContent
+  // > p.buttonDeleteGuildAdmin,
+// .radioUserRemoveRightGuild:checked
+//   ~ .slideSettingsAdmin
+//   > .cnContent
+//   > div.buttonValidateSettings,
+.radioUserRemoveRightGuild:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonDeleteGuildAdmin,
+.radioUserAddAdmin:checked ~ .slideSettingsAdmin > .cnContent > div.chooseUser,
+.radioUserAddAdmin:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > div.buttonValidateSettings,
+.radioUserAddAdmin:checked
+  ~ .slideSettingsAdmin
+  > .cnContent
+  > .buttonValidateSettings
+  > p.buttonRightsAdmin {
+  display: block;
+}
+
+//---------- Style Map ---------
+.labelMapDefault,
+.labelMapSoccer,
+.labelMapBasket {
+  border: dashed 2px #252f38;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.radioMapDefault:checked
+  ~ .slideSettings
+  > .cnContent
+  > .chooseMap
+  > p
+  > label
+  > .labelMapDefault,
+.radioMapSoccer:checked
+  ~ .slideSettings
+  > .cnContent
+  > .chooseMap
+  > p
+  > label
+  > .labelMapSoccer,
+.radioMapBasket:checked
+  ~ .slideSettings
+  > .cnContent
+  > .chooseMap
+  > p
+  > label
+  > .labelMapBasket {
+  border: dashed 5px #252f38;
+  padding: 5px;
+}
+
+//--------- Error -------
+.displayError,
+.radioFriend:checked ~ p.displayError {
+  width: auto;
+  height: auto;
+  color: red;
+  font-size: 1.2em;
+}
+.displayInfo,
+.radioFriend:checked ~ p.displayInfo {
+  width: auto;
+  height: auto;
+  color: blue;
+  font-size: 1.2em;
+}
+
+//--------- Search Opponant -------
+.searchOpponant {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.searchOpTxt {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+  font-size: 3em;
+}
+
+.labelQuitSearch {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  color: white;
+  font-size: 1.5em;
+}
+
+// ------------------------------------------------------//
+
+.slideSettingsWar h2,
+.cnContainer h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: rgba(37, 48, 56, 0.6);
+  position: absolute;
+  z-index: 10000;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 80px;
+  line-height: 80px;
+  top: 0px;
+  right: 0px;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(-16deg);
+  -moz-transform: scale(0) rotate(-16deg);
+  -o-transform: scale(0) rotate(-16deg);
+  -ms-transform: scale(0) rotate(-16deg);
+  transform: scale(0) rotate(-16deg);
+  -webkit-transition: all 0.5s linear 0.3s;
+  -moz-transition: all 0.5s linear 0.3s;
+  -o-transition: all 0.5s linear 0.3s;
+  -ms-transition: all 0.5s linear 0.3s;
+  transition: all 0.5s linear 0.3s;
+}
+.radioTraining:checked ~ .slideTraining > h2,
+.radioCompetition:checked ~ .slideCompetition > h2,
+.radioTournament:checked ~ .slideTournament > h2,
+.radioOffLine:checked ~ .slideSettings > h2,
+.radioRandom:checked ~ .slideSettings > h2,
+.radioFriend:checked ~ .slideSettings > h2,
+.radioWar:checked ~ .slideSettings > h2,
+.radioTournamentSpecial1:checked ~ .slideSettings > h2,
+.radioTournamentSpecial2:checked ~ .slideSettings > h2,
+.radioTournamentSpecial3:checked ~ .slideSettings > h2,
+.radioTournamentSpecial4:checked ~ .slideSettings > h2,
+.radioTournamentClassic:checked ~ .slideSettings > h2,
+.radioTournamentCreate:checked ~ .slideSettingsAdmin > h2,
+.radioTournamentDelete:checked ~ .slideSettingsAdmin > h2,
+.radioChatSearch:checked ~ .slideSettingsAdmin > h2,
+.radioChatDelete:checked ~ .slideSettingsAdmin > h2,
+.radioUserBan:checked ~ .slideSettingsAdmin > h2,
+.radioUserBanFromChat:checked ~ .slideSettingsAdmin > h2,
+.radioUserRemoveRightGuild:checked ~ .slideSettingsAdmin > h2,
+.radioUserAddAdmin:checked ~ .slideSettingsAdmin > h2 {
+  opacity: 1;
+  margin-right: 20px;
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
+
+.chooseTraining,
+.chooseSlide {
+  text-align: center;
+  position: absolute;
+  left: 3px;
+  padding-top: 80px;
+  margin: 0 5%;
+  width: 90%;
+  z-index: 1000;
+}
+
+.labelChooseTraining,
+.labelChooseSlide {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border: 8px solid #252f38;
+  padding: 2%;
+  font-size: 50px;
+  letter-spacing: 4px;
+  // text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  color: #252f38;
+  line-height: 66px;
+  outline: none;
+  margin: 20px 20%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ddac1c;
+  border-radius: 10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.radioTraining:checked ~ .chooseTraining,
+.radioCompetition:checked ~ .chooseTraining {
+  display: none;
+}
+
+.slideTraining,
+.slideCompetition,
+.slideTournament {
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  padding-top: 80px;
+  margin: 0 5%;
+  width: 90%;
+  opacity: 0;
+}
+
+.slideTournament {
+  display: none;
+}
+
+.radioTraining:checked ~ .slideTraining,
+.radioCompetition:checked ~ .slideCompetition,
+.radioTournament:checked ~ .slideTournament {
+  display: block;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.radioOffLine:checked ~ .slideTraining,
+.radioRandom:checked ~ .slideTraining,
+.radioFriend:checked ~ .slideTraining,
+.radioWar:checked ~ .slideTraining,
+.radioOffLine:checked ~ .slideCompetition,
+.radioRandom:checked ~ .slideCompetition,
+.radioFriend:checked ~ .slideCompetition,
+.radioWar:checked ~ .slideCompetition,
+.radioTournament:checked ~ .slideCompetition,
+.radioTournamentSpecial1:checked ~ .slideTournament,
+.radioTournamentSpecial2:checked ~ .slideTournament,
+.radioTournamentSpecial3:checked ~ .slideTournament,
+.radioTournamentSpecial4:checked ~ .slideTournament,
+.radioTournamentClassic:checked ~ .slideTournament,
+.radioTournamentCreate:checked ~ .chooseSlide,
+.radioTournamentDelete:checked ~ .chooseSlide,
+.radioChatSearch:checked ~ .chooseSlide,
+.radioChatDelete:checked ~ .chooseSlide,
+.radioUserBan:checked ~ .chooseSlide,
+.radioUserBanFromChat:checked ~ .chooseSlide,
+.radioUserRemoveRightGuild:checked ~ .chooseSlide,
+.radioUserAddAdmin:checked ~ .chooseSlide {
+  opacity: 0;
+  display: none;
+}
+
+.radioOffLine:checked ~ .labelSubSlide,
+.radioRandom:checked ~ .labelSubSlide,
+.radioFriend:checked ~ .labelSubSlide,
+.radioWar:checked ~ .labelSubSlide,
+.radioTournamentSpecial1:checked ~ .labelSubSlide,
+.radioTournamentSpecial2:checked ~ .labelSubSlide,
+.radioTournamentSpecial3:checked ~ .labelSubSlide,
+.radioTournamentSpecial4:checked ~ .labelSubSlide,
+.radioTournamentClassic:checked ~ .labelSubSlide {
+  opacity: 0;
+}
+
+.labelSubSlide,
+.labelSubSlideAdmin {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border: 8px solid #252f38;
+  padding: 2%;
+  font-size: 50px;
+  letter-spacing: 4px;
+  // text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  color: #252f38;
+  line-height: 66px;
+  outline: none;
+  margin: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ddac1c;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transform: rotate(-16deg);
+  -moz-transform: rotate(-16deg);
+  -o-transform: rotate(-16deg);
+  -ms-transform: rotate(-16deg);
+  transform: rotate(-16deg);
+  -webkit-transition: opacity 0.4s linear, -webkit-transform 0.4s linear,
+    box-shadow 0.3s ease-in-out;
+  -moz-transition: opacity 0.4s linear, -moz-transform 0.4s linear,
+    box-shadow 0.3s ease-in-out;
+  -o-transition: opacity 0.4s linear, -o-transform 0.4s linear,
+    box-shadow 0.3s ease-in-out;
+  -ms-transition: opacity 0.4s linear, -ms-transform 0.4s linear,
+    box-shadow 0.3s ease-in-out;
+  transition: opacity 0.4s linear, transform 0.4s linear,
+    box-shadow 0.3s ease-in-out;
+}
+
+.radioTraining:checked ~ .slideTraining > nav .labelSubSlide,
+.radioCompetition:checked ~ .slideCompetition > nav .labelSubSlide,
+.radioTournament:checked ~ .slideTournament > nav .labelSubSlide,
+.labelSubSlideAdmin {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.labelChooseTraining:hover,
+.labelSubSlide:hover,
+.labelSubSlideAdmin:hover {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 8px solid #ddac1c;
+  background-color: #252f38;
+  color: #ddac1c;
+}
+
+.labelSubSlide:nth-child(2),
+.labelSubSlideAdmin:nth-child(2) {
+  -webkit-transition-delay: 0.3s, 0.3s, 0s;
+  -moz-transition-delay: 0.3s, 0.3s, 0s;
+  -o-transition-delay: 0.3s, 0.3s, 0s;
+  -ms-transition-delay: 0.3s, 0.3s, 0s;
+  transition-delay: 0.3s, 0.3s, 0s;
+}
+.labelSubSlide:nth-child(3),
+.labelSubSlideAdmin:nth-child(3) {
+  -webkit-transition-delay: 0.6s, 0.6s, 0s;
+  -moz-transition-delay: 0.6s, 0.6s, 0s;
+  -o-transition-delay: 0.6s, 0.6s, 0s;
+  -ms-transition-delay: 0.6s, 0.6s, 0s;
+  transition-delay: 0.6s, 0.6s, 0s;
+}
+.labelSubSlide:nth-child(4),
+.labelSubSlideAdmin:nth-child(4) {
+  -webkit-transition-delay: 0.9s, 0.9s, 0s;
+  -moz-transition-delay: 0.9s, 0.9s, 0s;
+  -o-transition-delay: 0.9s, 0.9s, 0s;
+  -ms-transition-delay: 0.9s, 0.9s, 0s;
+  transition-delay: 0.9s, 0.9s, 0s;
+}
+.labelSubSlide,
+.labelSubSlideAdmin {
+  width: 42%;
+  display: inline-block;
+  font-size: 40px;
+}
+.labelSubSlide:nth-child(odd),
+.labelSubSlideAdmin:nth-child(odd) {
+  margin-right: 5px;
+}
+
+/* .slideSettings {
+	position: relative;
+	top:100px;
+} */
+
+.cnContent {
+  position: relative;
+  top: 100px;
+  background: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  margin: 20px 20px 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border: 8px solid #252f38;
+  margin-top: 5px;
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(36deg);
+  -moz-transform: scale(0) rotate(36deg);
+  -o-transform: scale(0) rotate(36deg);
+  -ms-transform: scale(0) rotate(36deg);
+  transform: scale(0) rotate(36deg);
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  -ms-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.radioOffLine:checked ~ .slideSettings > .cnContent,
+.checkboxWar:checked ~ .cnContainerWar > .slideSettingsWar > .cnContent,
+.radioRandom:checked ~ .slideSettings > .cnContent,
+.radioFriend:checked ~ .slideSettings > .cnContent,
+.radioWar:checked ~ .slideSettings > .cnContent,
+.radioTournamentSpecial1:checked ~ .slideSettings > .cnContent,
+.radioTournamentSpecial2:checked ~ .slideSettings > .cnContent,
+.radioTournamentSpecial3:checked ~ .slideSettings > .cnContent,
+.radioTournamentSpecial4:checked ~ .slideSettings > .cnContent,
+.radioTournamentClassic:checked ~ .slideSettings > .cnContent,
+.radioTournamentCreate:checked ~ .slideSettingsAdmin > .cnContent,
+.radioTournamentDelete:checked ~ .slideSettingsAdmin > .cnContent,
+.radioChatSearch:checked ~ .slideSettingsAdmin > .cnContent,
+.radioChatDelete:checked ~ .slideSettingsAdmin > .cnContent,
+.radioUserBan:checked ~ .slideSettingsAdmin > .cnContent,
+.radioUserBanFromChat:checked ~ .slideSettingsAdmin > .cnContent,
+.radioUserRemoveRightGuild:checked ~ .slideSettingsAdmin > .cnContent,
+.radioUserAddAdmin:checked ~ .slideSettingsAdmin > .cnContent {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
+
+.cnContent h3 {
+  border-top: 4px solid #ddac1c;
+  background-color: #252f38;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+// .cnContent div {
+//   border-top: 4px solid #ddac1c;
+// }
+
+.cnContent div {
+  color: #252f38;
+  background: rgba(255, 255, 255, 0.96);
+  margin: 0px 20px 25px 20px;
+}
+
+.cnBack {
+  color: #ddac1c;
+  width: 49px;
+  height: 42px;
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.radioTraining:checked ~ .slideTraining > .cnBack,
+.radioCompetition:checked ~ .slideCompetition > .cnBack,
+.radioTournament:checked ~ .slideTournament > .cnBack,
+.radioOffLine:checked ~ .slideSettings > .cnBack,
+.radioRandom:checked ~ .slideSettings > .cnBack,
+.radioFriend:checked ~ .slideSettings > .cnBack,
+.radioWar:checked ~ .slideSettings > .cnBack,
+.radioTournamentSpecial1:checked ~ .slideSettings > .cnBack,
+.radioTournamentSpecial2:checked ~ .slideSettings > .cnBack,
+.radioTournamentSpecial3:checked ~ .slideSettings > .cnBack,
+.radioTournamentSpecial4:checked ~ .slideSettings > .cnBack,
+.radioTournamentClassic:checked ~ .slideSettings > .cnBack,
+.radioTournamentCreate:checked ~ .slideSettingsAdmin > .cnBack,
+.radioTournamentDelete:checked ~ .slideSettingsAdmin > .cnBack,
+.radioChatSearch:checked ~ .slideSettingsAdmin > .cnBack,
+.radioChatDelete:checked ~ .slideSettingsAdmin > .cnBack,
+.radioUserBan:checked ~ .slideSettingsAdmin > .cnBack,
+.radioUserBanFromChat:checked ~ .slideSettingsAdmin > .cnBack,
+.radioUserRemoveRightGuild:checked ~ .slideSettingsAdmin > .cnBack,
+.radioUserAddAdmin:checked ~ .slideSettingsAdmin > .cnBack {
+  left: 3px;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+  -ms-transition: all 0.4s ease-in-out 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+
+.chooseSlide nav h3,
+.slideTournament nav h3 {
+  background-color: #252f38;
+  color: white;
+  font-size: 25px;
+  border-top: 6px solid #ddac1c;
+}
+
+// --------------- Tournament Tree View ------------------------//
+
+.tournamentTreeView {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  border: 8px solid #252f38;
+  // margin-top: 10px;
+}
+.tournamentTreeView .container {
+  margin: 0px auto;
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tournamentTreeView .round_one,
+.tournamentTreeView .round_two,
+.tournamentTreeView .round_three {
+  display: block;
+  float: left;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.tournamentTreeView .matchup {
+  display: flex;
+  margin: 15px 0;
+  height: 60px;
+}
+
+.tournamentTreeView .round_one .matchup {
+  margin-left: 15px;
+}
+
+.tournamentTreeView .round_three .matchup {
+  margin-right: 15px;
+}
+.tournamentTreeView .container li {
+  padding: 0 40px;
+  margin: 10px 0;
+  height: 25px;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  color: grey;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.tournamentTreeView .container .score {
+  font-size: 20px;
+  text-transform: uppercase;
+  float: right;
+  color: #ddac1c;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  right: 5px;
+}
+
+.tournamentTreeView .container a {
+  position: relative;
+  margin-left: 10px;
+  top: 18px;
+  cursor: pointer;
+}
+
+.tournamentTreeView h2 {
+  position: absolute;
+  top: 10px;
+  margin-left: 50px;
+  font-size: 27px;
+}
+
+.cnContainerWar {
+  // display: none;
+  // width: 55%;
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.4);
+  z-index: -100;
+  position: absolute;
+  top: 25px;
+}
+
+.checkboxWar:checked ~ .cnContainerWar {
+  // display: block;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cnBackWar {
+  z-index: 10000;
+  position: absolute;
+  left: 5px;
+  top: -65px;
+}
+
+.slideSettingsWar .collapse {
+  // background: rgba(0, 0, 0, 0.1);
+  margin: 0px;
+}
+
+.slideSettingsWar .labelActualWar,
+.slideSettingsWar .labelNextWar,
+.slideSettingsWar .labelNewWar,
+.slideSettingsWar .labelWarRequest,
+.slideSettingsWar .labelPendingWar,
+.slideSettingsWar .labelHistoryWar {
+  display: block;
+  // margin: 0px;
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: rgba(242, 187, 20, 0.9);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border: solid 0.5px #252f38;
+}
+.slideSettingsWar .labelActualWar:hover,
+.slideSettingsWar .labelNextWar:hover,
+.slideSettingsWar .labelNewWar:hover,
+.slideSettingsWar .labelWarRequest:hover,
+.slideSettingsWar .labelPendingWar:hover,
+.slideSettingsWar .labelHistoryWar:hover {
+  background-color: rgba(37, 48, 58, 0.9);
+  color: #ddac1c;
+}
+
+.slideSettingsWar .innerContent {
+  padding: 5px 0px 0px 0px;
+  width: 85%;
+  margin: 0px auto;
+  // background: rgba(0, 0, 0, 0);
+}
+
+.slideSettingsWar .innerContent p {
+  font-size: 18px;
+}
+
+.slideSettingsWar .innerContent label {
+  padding: 5px;
+}
+
+.slideSettingsWar .contentActualWar,
+.slideSettingsWar .contentNextWar,
+.slideSettingsWar .contentNewWar,
+.slideSettingsWar .contentWarRequest,
+.slideSettingsWar .contentPendingWar,
+.slideSettingsWar .contentHistoryWar {
+  margin: 0px;
+  height: 0px;
+  max-height: calc(70vh - 200px);
+  overflow: auto;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform 0.7s ease;
+}
+
+.slideSettingsWar .radioActualWar:checked ~ .collapse .labelActualWar,
+.slideSettingsWar .radioNextWar:checked ~ .collapse .labelNextWar,
+.slideSettingsWar .radioNewWar:checked ~ .collapse .labelNewWar,
+.slideSettingsWar .radioWarRequest:checked ~ .collapse .labelWarRequest,
+.slideSettingsWar .radioPendingWar:checked ~ .collapse .labelPendingWar,
+.slideSettingsWar .radioHistoryWar:checked ~ .collapse .labelHistoryWar {
+  background-color: #252f38;
+  color: white;
+}
+
+.slideSettingsWar .radioActualWar:checked ~ .collapse .contentActualWar,
+.slideSettingsWar .radioNextWar:checked ~ .collapse .contentNextWar,
+.slideSettingsWar .radioNewWar:checked ~ .collapse .contentNewWar,
+.slideSettingsWar .radioWarRequest:checked ~ .collapse .contentWarRequest,
+.slideSettingsWar .radioPendingWar:checked ~ .collapse .contentPendingWar,
+.slideSettingsWar .radioHistoryWar:checked ~ .collapse .contentHistoryWar {
+  height: auto;
+  transform: scaleY(1);
+}
+
+.slideSettingsWar .innerContent .buttonStart {
+  margin-top: 10px;
+}
+
+.slideSettingsWar .innerContent table {
+  border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+  margin: auto;
+}
+.slideSettingsWar .innerContent td {
+  border: 1px solid black;
+}
+.slideSettingsWar .contentWarRequest .innerContent tr,
+.slideSettingsWar .contentPendingWar .innerContent tr,
+.slideSettingsWar .contentNextWar .innerContent tr {
+  cursor: pointer;
+}
+.slideSettingsWar .contentWarRequest .innerContent tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slideSettingsWar .contentWarRequest .innerContent h3 {
+  margin-top: 20px;
+}
+
+.slideSettingsWar .contentHistoryWar .innerContent table {
+  margin: 20px;
+}

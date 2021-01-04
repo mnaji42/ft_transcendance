@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "bierner.lit-html",
+    "rebornix.ruby",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv"
+  ]
+}

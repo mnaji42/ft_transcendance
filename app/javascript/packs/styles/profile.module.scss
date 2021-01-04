@@ -1,0 +1,202 @@
+@import './variables';
+
+.content {
+  width: 100%;
+  background-color: #ddd;
+  padding: 4rem;
+  height: 100%;
+  color: #333;
+  max-height: calc(100vh - 4.25rem);
+  overflow: auto;
+}
+
+.contentInner {
+  background-color: #fff;
+  width: 100%;
+}
+
+.firstLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleCardAndButtons {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.titleCard {
+  padding: 1rem;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rank {
+  color: #666;
+}
+
+.avatar {
+  $size: 13rem;
+  width: $size;
+  height: $size;
+  background-size: cover;
+  position: relative;
+}
+
+.rightButtons {
+  padding: 1rem;
+  max-width: 15rem;
+  > button {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem 0.1rem;
+    float: right;
+  }
+}
+
+.buttonBlock {
+  color: white;
+  background-color: $color-red;
+}
+
+.buttonAddFriend {
+  color: white;
+  background-color: $color-green;
+}
+
+.buttonDirectMessage {
+  color: white;
+  background-color: $color-blue;
+}
+
+.buttonSpectate {
+  color: white;
+  background-color: $color-darkblue;
+}
+
+.buttonDefy {
+  color: white;
+  background-color: $color-lightgray;
+}
+
+.statusBubble {
+  position: absolute;
+  $size: 1.7rem;
+  $delta: 0.6rem;
+  bottom: -$size/4;
+  right: -$size/4;
+  width: $size;
+  height: $size;
+  border-radius: $size;
+
+  &.inGame {
+    background-color: $color-blue;
+  }
+  &.offline {
+    background-color: $color-lightgray;
+  }
+  &.online {
+    background-color: $color-green;
+  }
+}
+
+.innerRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  > div {
+    flex: 1;
+  }
+}
+
+.guildTitle {
+}
+
+.login {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.statusText {
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+
+  &.inGame {
+    color: $color-blue;
+  }
+  &.offline {
+    color: $color-gray;
+  }
+  &.online {
+    color: $color-green;
+  }
+}
+
+.matchHistory {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.matchHistoryTitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.match {
+  padding: 1rem;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
+
+  .matchDate {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .matchWin {
+    font-weight: 700;
+  }
+
+  .matchVersusDisplay {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .matchVersusLogin {
+    font-size: 1rem;
+    color: #777;
+  }
+
+  .matchType {
+    font-size: 1.3rem;
+    &.matchTypeTournament {
+      color: $color-blue;
+    }
+    &.matchTypeTraining {
+      color: $color-gray;
+    }
+    &.matchTypeRanked {
+      color: $color-green;
+    }
+    &.matchTypeWar {
+      color: $color-red;
+    }
+    &.matchTypeDuel {
+      color: $color-darkblue;
+    }
+  }
+}
+
+.noMatch {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
